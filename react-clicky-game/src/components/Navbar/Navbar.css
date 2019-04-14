@@ -1,0 +1,38 @@
+.navbar li {
+    display: inline-block;
+    text-align: center;
+  }
+
+  .title {
+    color: white;
+  }
+  
+  .left {
+    width: 15%;
+  }
+  
+  .middle {
+      width: 70%;
+  }
+  
+  .right {
+    width: 15%;
+  }
+  
+  .jumbotron {
+    background: brown;
+    box-shadow: 0 3px 6px #999, 0 3px 6px #999;
+    width: 100%;
+  }
+  
+  body {
+    font-size: 30px;
+  }
+
+  span {
+    color: white;
+  }
+
+  .col-md-4 {
+    color: white;
+  }
