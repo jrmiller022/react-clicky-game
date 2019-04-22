@@ -4,7 +4,7 @@ import "./Navbar.css";
 const style = {
     textStyle: {
         color: "white",
-        margin: 20
+        margin: 15
     }
 }
 
@@ -13,10 +13,10 @@ function Navbar(props) {
         <div className="jumbotron">
             <div className="row">
                 <div className="col-md-4">
-                    Instruments Click Game!
+                    Instruments Clicky Game!
     </div>
                 <div className="col-md-4">
-                    <div className="title">Click an Image Once!</div>
+                    <div className="title">Click an Image Only Once!</div>
                 </div>
 
                 <div className="col-md-4">

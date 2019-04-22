@@ -11,5 +11,4 @@ const InstruCard = props => {
     )
 };
 
-
 export default InstruCard;

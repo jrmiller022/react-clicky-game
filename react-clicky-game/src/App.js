@@ -8,29 +8,29 @@ import "./App.css";
 class App extends Component {
   state = {
     instruments,
+    clickedCard: [],
     score: 0,
     topScore: 0
   }
 
   clickCount = event => {
-    const currentCard = event.targetçç;
+    const currentCard = event.id;
     const CardAlreadyClicked =
-      this.state.clickedCard.indexOf(currentCard) > -1;
-
+      this.state.clickedCard.includes(currentCard) > 1;
     if (CardAlreadyClicked) {
       this.setState({
-        Instrument: this.state.instruments.sort(function () {
+        instruments: this.state.instruments.sort(function () {
           return 0.5 - Math.random();
         }),
         clickedCard: [],
         score: 0
       });
-      alert("You lose");
+      alert("You lose. Play again?");
 
     } else {
       this.setState(
         {
-          instrument: this.state.instruments.sort(function () {
+          instruments: this.state.instruments.sort(function () {
             return 0.5 - Math.random();
           }),
           clickedCard: this.state.clickedCard.concat(
@@ -55,11 +55,11 @@ class App extends Component {
     }
   };
 
-
   render() {
     return (
       <Wrapper>
-        <Navbar score={this.state.score} topScore={this.state.topScore}>Clicky Game</Navbar>
+        <Navbar score={this.state.score}
+          topScore={this.state.topScore}>Clicky Game</Navbar>
         {this.state.instruments.map(instrument => (
           <InstruCard
             clickCount={this.clickCount}
