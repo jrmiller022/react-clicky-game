@@ -1,6 +1,6 @@
 ## React-Clicky-Game Instruments.
 
-## This game is set up with 10 images of instruments. The goal is to click an image without clicking the same image twice. If you click all without duplicating, you win! If you click an image twice you lose and have to start over. 
+### This game is set up with 10 images of instruments. The goal is to click an image without clicking the same image twice. If you click all images without duplicating, you win! If you click an image twice you lose and have to start over. 
 
 ### Technology Used.
 
