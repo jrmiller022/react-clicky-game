@@ -1,4 +1,6 @@
-## React-clicky-game Instruments.
+## React-Clicky-Game Instruments.
+
+## This game is set up with 10 images of instruments. The goal is to click an image without clicking the same image twice. If you click all without duplicating, you win! If you click an image twice you lose and have to start over. 
 
 ### Technology Used.
 
@@ -10,4 +12,4 @@ My first React assignment created in bootcamp class.
 
 ### Demo
 
-Click here: (https://jrmiller022.github.io/react-clicky-game/).
+Click here: https://jrmiller022.github.io/react-clicky-game

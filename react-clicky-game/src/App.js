@@ -15,11 +15,10 @@ class App extends Component {
 
   clickCount = event => {
     const currentCard = event.id;
-    const CardAlreadyClicked =
-      this.state.clickedCard.includes(currentCard) > 1;
+    const CardAlreadyClicked = this.state.clickedCard.includes(currentCard) > 1;
     if (CardAlreadyClicked) {
       this.setState({
-        instruments: this.state.instruments.sort(function () {
+        instruments: this.state.instruments.includes(function () {
           return 0.5 - Math.random();
         }),
         clickedCard: [],
