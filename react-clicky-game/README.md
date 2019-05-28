@@ -13,3 +13,6 @@ My first React assignment created in bootcamp class.
 ### Demo
 
 Click here: https://jrmiller022.github.io/react-clicky-game
+
+![alt text](react-clicky-game/src/images/clickgame.png)
+
