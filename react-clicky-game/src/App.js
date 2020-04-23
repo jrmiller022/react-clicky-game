@@ -8,8 +8,6 @@ import "./App.css";
 class App extends Component {
   state = {
     instruments,
-    // instruments: [],
-    // clickedCard: null,
     score: 0,
     topScore: 0
   }
@@ -22,13 +20,13 @@ class App extends Component {
     this.state.instruments.forEach(instrument => {
       instrument.count = 0;
     });
-    alert('Game Over!');
+    alert(`Game Over! \nScore: ${this.state.score}`);
     this.setState({ score: 0 });
     return true;
   }
 
   clickCount = id => {
-    this.state.instruments.find((o, i) => {
+    this.state.instruments.forEach((o, i) => {
       if (o.id === id) {
         if (instruments[i].count === 0) {
           instruments[i].count = instruments[i].count + 1;
@@ -61,63 +59,3 @@ class App extends Component {
 }
 
 export default App;
-
-  // clickCount = event => {
-  //   const currentCard = event.id;
-  //   const CardAlreadyClicked = this.state.clickedCard.includes(currentCard) > 1;
-  //   if (CardAlreadyClicked) {
-  //     this.setState({
-  //       instrument: this.state.instruments.includes(function () {
-  //         return 0.5 - Math.random();
-  //       }),
-  //       instruments: [],
-  //       score: 0
-  //     });
-  //     alert("You lose. Play again?");
-
-  // else {
-  //   this.setState(
-  //     {
-  //       instrument: this.state.instruments.sort(function () {
-  //         return 0.5 - Math.random();
-  //       }),
-  //       clickedCard: this.state.clickedCard.concat(
-  //         currentCard
-  //       ),
-  //       score: this.state.score + 1
-  //     },
-
-  //     () => {
-  //       if (this.state.score === 11) {
-  //         alert("Yes! You Win!");
-  //         this.setState({
-  //           instrument: this.state.instruments.sort(function () {
-  //             return 0.5 - Math.random();
-  //           }),
-  //           clickedCard: [],
-  //           score: 0
-  //         });
-  //       }
-  //     }
-  //   );
-  // }
-  //   };
-
-
-//   render() {
-//     return (
-//       <Wrapper>
-//         <Navbar score={this.state.score}
-//           topScore={this.state.topScore}>Clicky Game</Navbar>
-//         {this.state.instrument.map(instruments => (
-//           <InstruCard
-//             clickCount={this.clickCount}
-//             id={instruments.id}
-//             key={instruments.id}
-//             image={instruments.image}
-//           />
-//         ))}
-//       </Wrapper>
-//     );
-//   }
-// }
