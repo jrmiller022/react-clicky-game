@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Navbar from "./components/Navbar/Navbar"
-import InstruCard from "./components/InstruCard/instruCard"
+import Navbar from "./components/Navbar/Navbar";
+import InstruCard from "./components/InstruCard/InstruCard"
 import Wrapper from "./components/Wrapper/Wrapper"
 import instruments from "./instruments.json"
 import "./App.css";
@@ -25,20 +25,20 @@ class App extends Component {
     return true;
   }
 
-  clickCount = id => {
-    this.state.instruments.forEach((o, i) => {
-      if (o.id === id) {
-        if (instruments[i].count === 0) {
-          instruments[i].count = instruments[i].count + 1;
-          this.setState({ score: this.state.score + 1 }, function () {
-          });
-          this.state.instruments.sort(() => Math.random() - 0.5)
-          return true;
+  clickCount = (id) => {
+    var temp = [...this.state.instruments]
+    temp.forEach((instrument) => {
+      if (instrument.id === id) {
+        if (instrument.count === 0) {
+          instrument.count += 1;
+          this.setState({ score: this.state.score + 1 });
         } else {
           this.gameOver();
         }
       }
     });
+    temp.sort(() => Math.random() - 0.5)
+    this.setState({ instruments: temp })
   }
 
   render() {
