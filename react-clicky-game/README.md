@@ -12,7 +12,7 @@ My first React project created in bootcamp class.
 
 ### Demo
 
-Click here: https://jrmiller022.github.io/jrmiller022/jrmiller022.github.io/react-clicky-game
+Click here: https://jrmiller022.github.io/react-clicky-game
 
 ![alt text](src/images/clickgame.png)
 
