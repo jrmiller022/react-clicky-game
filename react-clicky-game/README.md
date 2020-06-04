@@ -16,4 +16,4 @@ Click here: https://jrmiller022.github.io/react-clicky-game
 
 ![alt text](src/images/clickgame.png)
 
-# react-clicky-game
+
