@@ -8,7 +8,7 @@ This application uses React to handle all front-end features.
 
 ### Notes
 
-My first React project created in bootcamp class.
+React project created in bootcamp class.
 
 ### Demo
 
