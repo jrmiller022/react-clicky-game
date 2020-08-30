@@ -8,7 +8,7 @@ This application uses React to handle all front-end features.
 
 ### Notes
 
-React game created in bootcamp class.
+React project game created in bootcamp class.
 
 ### Demo
 
